@@ -126,7 +126,7 @@
             bindings = <
           &kp EXCL   &kp AT      &kp HASH      &kp DOLLAR  &kp PERCENT          &kp CARET  &kp AMPS   &kp ASTERISK     &kp BACKSLASH      &kp PIPE
           &kp TILDE  &kp C_PREV  &kp UP_ARROW  &kp C_NEXT  &kp C_VOLUME_UP      &kp EQUAL  &kp MINUS  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS
-&kp CAPS  &kp GRAVE  &kp LEFT    &kp DOWN      &kp RIGHT   &kp C_VOLUME_DOWN    &kp PLUS   &kp UNDER  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp C_MUTE
+&kp CAPS  &kp GRAVE  &kp LEFT    &kp DOWN      &kp RIGHT   &kp C_VOLUME_DOWN    &kp PLUS   &kp UNDER  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp C_PLAY_PAUSE
                                  &trans        &trans      &trans               &trans     &trans     &trans
             >;
 
