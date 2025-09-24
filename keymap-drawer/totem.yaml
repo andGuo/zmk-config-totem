@@ -149,7 +149,7 @@ layers:
   - '}'
   - ']'
   - )
-  - MUTE
+  - PLAY PAUSE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
