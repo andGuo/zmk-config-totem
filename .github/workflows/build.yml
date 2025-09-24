@@ -4,6 +4,7 @@ on:
   push:
     paths-ignore:
       - "keymap-drawer/**"
+      - "readme.md"
 
 jobs:
   build:
