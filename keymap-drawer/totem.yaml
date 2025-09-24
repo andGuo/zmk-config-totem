@@ -1,0 +1,163 @@
+layout: {zmk_keyboard: totem}
+layers:
+  WIN:
+  - Q
+  - W
+  - F
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: TAB, h: LEFT SHIFT}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: '''', h: RIGHT SHIFT}
+  - LCTRL
+  - '&td_layer_3'
+  - SPACE
+  - ENTER
+  - '&td_layer_2'
+  - BACKSPACE
+  MAC:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LGUI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NUMBER:
+  - OUT BLE
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: PG UP, h: HOME}
+  - '7'
+  - '8'
+  - '9'
+  - PRINTSCREEN
+  - BT NXT
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: PG DN, h: END}
+  - '4'
+  - '5'
+  - '6'
+  - .
+  - BT CLR
+  - OUT USB
+  - F9
+  - F10
+  - F11
+  - F12
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - ENTER
+  - {t: DEL, h: Ctl+Alt+DEL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYMBOL:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - \
+  - '|'
+  - '~'
+  - PREV
+  - UP ARROW
+  - NEXT
+  - VOLUME UP
+  - '='
+  - '-'
+  - '{'
+  - '['
+  - (
+  - CAPS
+  - '`'
+  - LEFT
+  - DOWN
+  - RIGHT
+  - VOLUME DOWN
+  - +
+  - _
+  - '}'
+  - ']'
+  - )
+  - MUTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [8, 9]
+  k: ESC
+- p: [33, 36]
+  k: {t: MAC, h: toggle}
