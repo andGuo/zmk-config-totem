@@ -157,7 +157,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [8, 9]
+- p: [0, 1]
   k: ESC
 - p: [33, 36]
   k: {t: MAC, h: toggle}
