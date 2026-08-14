@@ -39,7 +39,7 @@
             bindings = <&kp ESC>;
         };
 
-        combo_lgui {
+        combo_toggle_mac {
             bindings = <&tog 1>;
             key-positions = <33 36>;
         };
