@@ -40,7 +40,7 @@
         };
 
         combo_lgui {
-            bindings = <&kp LGUI>;
+            bindings = <&tog 1>;
             key-positions = <33 36>;
         };
     };
@@ -50,7 +50,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LAYER_2";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&tog 1>;
+            bindings = <&mo 2>, <&tog 2>;
 
             tapping-term-ms = <250>;
         };
@@ -59,7 +59,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LAYER_3";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&tog 2>;
+            bindings = <&mo 3>, <&tog 3>;
 
             tapping-term-ms = <250>;
         };
@@ -87,18 +87,23 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                    &kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y      &kp U        &kp I          &kp O    &kp P
-                    &kp A  &kp S  &kp D      &kp F        &kp G        &kp H      &kp J        &kp K          &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT TAB  &kp Z  &kp X  &kp C      &kp V        &kp B        &kp N      &kp M        &kp COMMA      &kp DOT  &kp FSLH       &mt RIGHT_SHIFT SQT
-                                  &kp LCTRL  &td_layer_3  &kp SPACE    &kp ENTER  &td_layer_2  &kp BACKSPACE
+                    &kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y           &kp U        &kp I          &kp O    &kp P
+                    &kp A  &kp S  &kp D      &kp F        &kp G        &kp H           &kp J        &kp K          &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT TAB  &kp Z  &kp X  &kp C      &kp V        &kp B        &kp N           &kp M        &kp COMMA      &kp DOT  &kp FSLH       &mt RIGHT_SHIFT SQT
+                                  &kp LCTRL  &td_layer_3  &kp SPACE    &mt LGUI ENTER  &td_layer_2  &kp BACKSPACE
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        mac_layer {
+            bindings = <
+        &trans  &trans  &trans    &trans  &trans    &trans           &trans  &trans  &trans  &trans
+        &trans  &trans  &trans    &trans  &trans    &trans           &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans    &trans           &trans  &trans  &trans  &trans  &trans
+                        &kp LGUI  &trans  &trans    &mt LCTRL ENTER  &trans  &trans
+            >;
+
+            label = "MAC";
+        };
 
         lower_layer {
             bindings = <
